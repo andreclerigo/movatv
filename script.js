@@ -17,12 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Show the page elements when the video ends
     video.onended = function() {
-        console.log('acabou');
-        
         // Remove the video element
         video.remove();
         video.style.display = "none";
         videoFrame.style.display = "none";
+        document.body.style.overflow = "auto";
         
         // Show the page elements
         content.style.display = "block";
