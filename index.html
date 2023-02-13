@@ -9,57 +9,27 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Custom JS -->
+        <script src="script.js"></script>
         <link rel="shortcut icon" type="image/png" href="favicon.png">
-
-        <style>
-            html {
-                height: 100% !important;
-            }
-            body {
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
-            }
-            footer {
-                margin-top: auto;
-                bottom: 0;
-            }
-            h2, h4 {
-                text-align: center;
-            }
-            .mova {
-                max-width: 550px;
-                width: 100%;
-                -webkit-filter: drop-shadow(4px 4px 4px #666666);
-                filter: drop-shadow(4px 4px 4px #666666);
-            }
-            .nava {
-                height: 50px;
-                width: auto;
-            }
-            .cm {
-                height: 50px;
-                width: auto;
-            }
-            @media (max-width: 767px) {
-                .nava {
-                    height: 40px;
-                }
-                .cm {
-                    height: 40px;
-                }
-            }
-            p {
-                font-size: 12px;
-            }
-        </style>
 
         <title>MovaTV</title>
     </head>
   
     <body>
-        <div class="d-flex align-items-center my-auto" style="height: max-content">
-            <div class="d-flex flex-column align-items-center my-auto mx-auto">
+        <!-- Video intro -->
+        <div id="videoFrame">
+            <video id="video" muted width="100%" onended="console.log('ola')">
+                <source src="intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Content -->
+        <div class="d-flex align-items-center my-auto" style="height: max-content;">
+            <div id="content" class="d-flex flex-column align-items-center my-auto mx-auto">
                 <img class="mova" src="movatv.png">
                 <h2 class="m-0 mt-4">Televisão Digital Associativa</h2>
                 <h4 class="m-0 mt-1"><i>BREVEMENTE PERTO DE SI!</i></h4>
@@ -67,7 +37,8 @@
         </div>
     </body>
 
-    <footer>
+    <!-- Footer with creator and partener-->
+    <footer id="footer">
         <div class="d-flex">
             <div class="col"></div>
             <div class="p-4 d-flex flex-column align-items-center my-auto mx-auto">

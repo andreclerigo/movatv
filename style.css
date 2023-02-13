@@ -1,0 +1,55 @@
+html {
+    height: 100% !important;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    bottom: 0;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+.mova {
+    max-width: 550px;
+    width: 100%;
+    -webkit-filter: drop-shadow(4px 4px 4px #666666);
+    filter: drop-shadow(4px 4px 4px #666666);
+}
+
+.nava {
+    height: 50px;
+    width: auto;
+}
+
+.cm {
+    height: 50px;
+    width: auto;
+}
+
+@media (max-width: 767px) {
+    .nava {
+        height: 40px;
+    }
+    .cm {
+        height: 40px;
+    }
+}
+
+p {
+    font-size: 12px;
+}
+
+#videoFrame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
